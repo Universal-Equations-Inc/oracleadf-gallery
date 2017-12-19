@@ -6,9 +6,12 @@
           usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
     <page path="/OneColumnHeaderAndFooterTemplateDef.xhtml"
           usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
+    <page path="public_html/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
+    <page path="/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"
           path="ueqsiteproject.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef"/>
+    <page id="ueqsiteproject_indexPageDef" path="ueqsiteproject.pageDefs.indexPageDef"/>
   </pageDefinitionUsages>
 </Application>
