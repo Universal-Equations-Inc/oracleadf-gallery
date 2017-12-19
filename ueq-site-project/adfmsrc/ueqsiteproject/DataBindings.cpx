@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.11.57" id="DataBindings"
+             SeparateXMLFiles="false" Package="ueqsiteproject" ClientType="Generic">
+  <pageMap>
+    <page path="public_html/OneColumnHeaderAndFooterTemplateDef.xhtml"
+          usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
+    <page path="/OneColumnHeaderAndFooterTemplateDef.xhtml"
+          usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"
+          path="ueqsiteproject.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef"/>
+  </pageDefinitionUsages>
+</Application>
