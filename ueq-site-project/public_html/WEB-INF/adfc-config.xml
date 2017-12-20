@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2"></adfc-config>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="index">
+    <page>/index.xhtml</page>
+  </view>
+  <view id="privacy">
+    <page>/privacy.xhtml</page>
+  </view>
+  <control-flow-rule id="__2">
+    <from-activity-id>index</from-activity-id>
+    <control-flow-case id="__3">
+      <to-activity-id>privacy</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__4">
+    <from-activity-id>privacy</from-activity-id>
+    <control-flow-case id="__5">
+      <to-activity-id>index</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+</adfc-config>

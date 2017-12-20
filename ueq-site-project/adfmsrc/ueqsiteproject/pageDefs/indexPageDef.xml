@@ -5,6 +5,7 @@
   <executables>
     <variableIterator id="variables"/>
     <page path="ueqsiteproject.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef" id="ptb1" Refresh="ifNeeded"/>
+    <page path="ueqsiteproject.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef" id="ptb2" Refresh="ifNeeded"/>
   </executables>
   <bindings/>
 </pageDefinition>

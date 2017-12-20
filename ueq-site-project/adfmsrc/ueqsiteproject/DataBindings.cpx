@@ -8,10 +8,13 @@
           usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
     <page path="public_html/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
     <page path="/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
+    <page path="public_html/privacy.xhtml" usageId="ueqsiteproject_privacyPageDef"/>
+    <page path="/privacy.xhtml" usageId="ueqsiteproject_privacyPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"
           path="ueqsiteproject.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef"/>
     <page id="ueqsiteproject_indexPageDef" path="ueqsiteproject.pageDefs.indexPageDef"/>
+    <page id="ueqsiteproject_privacyPageDef" path="ueqsiteproject.pageDefs.privacyPageDef"/>
   </pageDefinitionUsages>
 </Application>
