@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.11.57" id="errorPageDef"
+                Package="com.uequations.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <page path="com.uequations.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef" id="ptb1" Refresh="ifNeeded"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

@@ -164,4 +164,8 @@
   <listener>
     <listener-class>oracle.adf.mbean.share.config.ADFConfigLifeCycleCallBack</listener-class>
   </listener>
+  <welcome-file-list>
+    <welcome-file>faces/index.xhtml</welcome-file>
+    <welcome-file></welcome-file>
+  </welcome-file-list>
 </web-app>

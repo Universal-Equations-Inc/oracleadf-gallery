@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.11.57"
-                id="OneColumnHeaderAndFooterTemplateDefPageDef" Package="ueqsiteproject.pageDefs">
-  <parameters/>
-  <executables>
-    <variableIterator id="variables"/>
-  </executables>
-  <bindings/>
-</pageDefinition>

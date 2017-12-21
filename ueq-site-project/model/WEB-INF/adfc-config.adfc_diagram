@@ -7,11 +7,11 @@
       <property
          name="activityId">index</property>
       <property
-         name="x">55.5</property>
+         name="x">54.5</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>index&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">72.36719</property>
+         name="y">70.234375</property>
       <property
          name="page">/index.xhtml</property>
       <property
@@ -44,7 +44,7 @@
       <property
          name="fromsrcid">__4</property>
       <property
-         name="sdm:polyPoints">R54,103.28244,177.80078,103.5,68.80078,R46</property>
+         name="sdm:polyPoints">R54,103.350044,177.80078,102.43045,70.16797,R50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -58,6 +58,85 @@
       <property
          name="fromsrcid">__2</property>
       <property
-         name="sdm:polyPoints">R54,96.5,75.80078,96.5,170.80078,R46</property>
+         name="sdm:polyPoints">R58,95.5,77.16797,96.5,170.80078,R46</property>
+   </ControlFlowCase>
+   <UrlView
+      id="UrlView6">
+      <property
+         name="activityId">blog</property>
+      <property
+         name="x">216.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>blog&lt;/b>&lt;/p>&lt;p>Activity Type:  Url View&lt;/p></property>
+      <property
+         name="y">63.601562</property>
+      <property
+         name="finish">true</property>
+      <property
+         name="exceptionHandler">false</property>
+   </UrlView>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View8"
+      to="UrlView6">
+      <property
+         name="fromOutcome">*</property>
+      <property
+         name="sdm:polyPoints">R42,105.906166,63.16797,175.0,63.535156,L50</property>
+   </ControlFlowCase>
+   <UrlView
+      id="UrlView8">
+      <property
+         name="activityId">shop</property>
+      <property
+         name="x">-105.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>shop&lt;/b>&lt;/p>&lt;p>Activity Type:  Url View&lt;/p></property>
+      <property
+         name="y">71.40234</property>
+      <property
+         name="finish">true</property>
+      <property
+         name="exceptionHandler">false</property>
+   </UrlView>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase9"
+      from="View8"
+      to="UrlView8">
+      <property
+         name="fromOutcome">*</property>
+      <property
+         name="sdm:polyPoints">B50,54.5,124.16797,-105.0,125.33594,B50</property>
+   </ControlFlowCase>
+   <View
+      id="View10">
+      <property
+         name="activityId">error</property>
+      <property
+         name="x">59.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>error&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">-97.13281</property>
+      <property
+         name="page">/error.xhtml</property>
+      <property
+         name="exceptionHandler">true</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase13"
+      from="View10"
+      to="View8">
+      <property
+         name="tosrcid">__10</property>
+      <property
+         name="fromOutcome"></property>
+      <property
+         name="fromsrcid">__9</property>
+      <property
+         name="sdm:polyPoints">B50,59.0,-43.19922,54.5,16.167969,T50</property>
    </ControlFlowCase>
 </SDM>
