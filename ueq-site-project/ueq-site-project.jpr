@@ -70,11 +70,31 @@
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
-   <value n="defaultPackage" v="ueqsiteproject"/>
+   <value n="defaultPackage" v="com.uequations"/>
+   <hash n="oracle.adfdtinternal.model.ide.settings.ADFMSettings">
+      <hash n="adfmContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="adfmsrc/"/>
+         </list>
+      </hash>
+   </hash>
    <hash n="oracle.adfdtinternal.view.rich.setting.ADFViewSettings">
       <value n="ENABLE_ADF_WEBAPP_LIB_SUPPORT" v="true"/>
       <value n="KEY_ENABLE_USER_CUSTOMIZATIONS" v="1"/>
       <value n="KEY_USE_JSF_SPEC_COMPS" v="true"/>
+   </hash>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="src/main/resources/"/>
+         </list>
+      </hash>
    </hash>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
@@ -96,7 +116,7 @@
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="ueq-site-webapp"/>
-      <value n="j2eeWebContextRoot" v="welcome"/>
+      <value n="j2eeWebContextRoot" v="site"/>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">
@@ -104,7 +124,7 @@
             <string v="+**"/>
          </list>
          <list n="url-path">
-            <url path="."/>
+            <url path="src/main/java/"/>
          </list>
       </hash>
    </hash>
