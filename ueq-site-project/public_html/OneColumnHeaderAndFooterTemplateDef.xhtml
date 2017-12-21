@@ -11,10 +11,10 @@
         <af:gridRow height="50px" id="pt_gr1">
             <af:gridCell width="100%" halign="stretch" valign="stretch" id="pt_gc1">
                 <!-- Header -->
-                <af:navigationPane hint="buttons" id="pt_np1">
-                    <af:commandNavigationItem id="ni1" text="Home" icon="#{resource['images:home.svg']}" selected="true" action="home" />
-                    <af:commandNavigationItem text="Blog" id="pt_cni1" icon="#{resource['images:blog.svg']}" action="blog"/>
-                    <af:commandNavigationItem text="Shop" id="pt_cni2" icon="#{resource['images:shop.svg']}" action="shop"/>
+                <af:navigationPane hint="bar" id="pt_np1">
+                    <af:commandNavigationItem id="ni1" text="Home" icon="#{resource['images:home.svg']}" selected="true" action="toHome" />
+                    <af:commandNavigationItem text="Blog" id="pt_cni1" icon="#{resource['images:blog.svg']}" action="toBlog"/>
+                    <af:commandNavigationItem text="Shop" id="pt_cni2" icon="#{resource['images:shop.svg']}" action="toShop"/>
                 </af:navigationPane>
             </af:gridCell>
         </af:gridRow>

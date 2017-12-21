@@ -17,28 +17,32 @@
     <page>/error.xhtml</page>
   </view>
   <control-flow-rule id="__2">
-    <from-activity-id>index</from-activity-id>
+    <from-activity-id>*</from-activity-id>
     <control-flow-case id="__3">
+      <from-outcome>toPrivacy</from-outcome>
       <to-activity-id>privacy</to-activity-id>
     </control-flow-case>
     <control-flow-case id="__1">
+      <from-outcome>toBlog</from-outcome>
       <to-activity-id>blog</to-activity-id>
     </control-flow-case>
     <control-flow-case id="__6">
+      <from-outcome>toShop</from-outcome>
       <to-activity-id>shop</to-activity-id>
     </control-flow-case>
   </control-flow-rule>
   <control-flow-rule id="__4">
-    <from-activity-id>privacy</from-activity-id>
+    <from-activity-id>*</from-activity-id>
     <control-flow-case id="__5">
+      <from-outcome>toIndex</from-outcome>
       <to-activity-id>index</to-activity-id>
     </control-flow-case>
   </control-flow-rule>
   <control-flow-rule id="__9">
-    <from-activity-id>error</from-activity-id>
+    <from-activity-id>*</from-activity-id>
     <control-flow-case id="__10">
-      <from-outcome></from-outcome>
-      <to-activity-id>index</to-activity-id>
+      <from-outcome>failure</from-outcome>
+      <to-activity-id>error</to-activity-id>
     </control-flow-case>
   </control-flow-rule>
 </adfc-config>
