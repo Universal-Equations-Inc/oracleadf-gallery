@@ -10,11 +10,14 @@
     <page path="/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
     <page path="public_html/privacy.xhtml" usageId="ueqsiteproject_privacyPageDef"/>
     <page path="/privacy.xhtml" usageId="ueqsiteproject_privacyPageDef"/>
+    <page path="public_html/error.xhtml" usageId="ueqsiteproject_errorPageDef"/>
+    <page path="/error.xhtml" usageId="ueqsiteproject_errorPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"
           path="ueqsiteproject.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef"/>
     <page id="ueqsiteproject_indexPageDef" path="ueqsiteproject.pageDefs.indexPageDef"/>
     <page id="ueqsiteproject_privacyPageDef" path="ueqsiteproject.pageDefs.privacyPageDef"/>
+    <page id="ueqsiteproject_errorPageDef" path="ueqsiteproject.pageDefs.errorPageDef"/>
   </pageDefinitionUsages>
 </Application>
