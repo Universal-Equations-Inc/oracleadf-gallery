@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <exception-handler>error</exception-handler>
   <view id="index">
     <page>/index.xhtml</page>
   </view>
   <view id="privacy">
     <page>/privacy.xhtml</page>
   </view>
+  <url-view id="blog">
+    <url>http://blogs.uequations.com/</url>
+  </url-view>
+  <url-view id="shop">
+    <url>https://shop.uequations.com</url>
+  </url-view>
+  <view id="error">
+    <page>/error.xhtml</page>
+  </view>
   <control-flow-rule id="__2">
     <from-activity-id>index</from-activity-id>
     <control-flow-case id="__3">
       <to-activity-id>privacy</to-activity-id>
     </control-flow-case>
+    <control-flow-case id="__1">
+      <to-activity-id>blog</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__6">
+      <to-activity-id>shop</to-activity-id>
+    </control-flow-case>
   </control-flow-rule>
   <control-flow-rule id="__4">
     <from-activity-id>privacy</from-activity-id>
     <control-flow-case id="__5">
+      <to-activity-id>index</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__9">
+    <from-activity-id>error</from-activity-id>
+    <control-flow-case id="__10">
+      <from-outcome></from-outcome>
       <to-activity-id>index</to-activity-id>
     </control-flow-case>
   </control-flow-rule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.11.57" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.uequations" ClientType="Generic">
+  <pageMap>
+    <page path="public_html/OneColumnHeaderAndFooterTemplateDef.xhtml"
+          usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
+    <page path="/OneColumnHeaderAndFooterTemplateDef.xhtml"
+          usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
+    <page path="public_html/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
+    <page path="/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
+    <page path="public_html/privacy.xhtml" usageId="ueqsiteproject_privacyPageDef"/>
+    <page path="/privacy.xhtml" usageId="ueqsiteproject_privacyPageDef"/>
+    <page path="public_html/error.xhtml" usageId="ueqsiteproject_errorPageDef"/>
+    <page path="/error.xhtml" usageId="ueqsiteproject_errorPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"
+          path="com.uequations.pageDefs.OneColumnHeaderAndFooterTemplateDefPageDef"/>
+    <page id="ueqsiteproject_indexPageDef" path="com.uequations.pageDefs.indexPageDef"/>
+    <page id="ueqsiteproject_privacyPageDef" path="com.uequations.pageDefs.privacyPageDef"/>
+    <page id="ueqsiteproject_errorPageDef" path="com.uequations.pageDefs.errorPageDef"/>
+  </pageDefinitionUsages>
+</Application>
