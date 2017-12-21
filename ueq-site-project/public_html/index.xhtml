@@ -21,7 +21,14 @@
         </f:facet>
     
         <af:form id="f1">
-            <af:pageTemplate viewId="/OneColumnHeaderAndFooterTemplateDef.xhtml" value="#{bindings.ptb2}" id="pt1"/>
+            <af:pageTemplate viewId="/OneColumnHeaderAndFooterTemplateDef.xhtml" value="#{bindings.ptb2}" id="pt1"> 
+            <f:facet name="first">
+                        <!-- Content -->
+                    </f:facet>
+                    <f:facet name="second">
+                        <!-- Footer -->
+                    </f:facet>
+            </af:pageTemplate>
         </af:form>
     </af:document>
 </f:view>
