@@ -2,5 +2,12 @@
 <faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee">
   <application>
     <default-render-kit-id>oracle.adf.rich</default-render-kit-id>
+    <resource-bundle>
+      <base-name>i18n</base-name>
+      <var>i18n</var>
+    </resource-bundle>
+    <locale-config>
+      <default-locale>en</default-locale>
+    </locale-config>
   </application>
 </faces-config>
