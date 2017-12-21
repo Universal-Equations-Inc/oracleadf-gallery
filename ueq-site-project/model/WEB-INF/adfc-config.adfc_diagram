@@ -3,55 +3,61 @@
    <OverallProperties
       id="OverallProperties1"/>
    <View
-      id="View2">
+      id="View8">
       <property
          name="activityId">index</property>
       <property
-         name="x">536.0</property>
+         name="x">55.5</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>index&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">210.60156</property>
+         name="y">72.36719</property>
       <property
          name="page">/index.xhtml</property>
       <property
          name="exceptionHandler">false</property>
    </View>
    <View
-      id="View3">
+      id="View9">
       <property
          name="activityId">privacy</property>
       <property
-         name="x">299.0</property>
+         name="x">55.5</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>privacy&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">211.73438</property>
+         name="y">174.36719</property>
       <property
          name="page">/privacy.xhtml</property>
       <property
          name="exceptionHandler">false</property>
-      <property
-         name="thumbnailExpanded">false</property>
    </View>
    <ControlFlowCase
       islink="true"
-      id="ControlFlowCase5"
-      from="View2"
-      to="View3">
+      id="ControlFlowCase10"
+      from="View9"
+      to="View8">
+      <property
+         name="tosrcid">__5</property>
       <property
          name="fromOutcome">*</property>
       <property
-         name="sdm:polyPoints">L50,495.0,210.53516,340.0,211.66797,R50</property>
+         name="fromsrcid">__4</property>
+      <property
+         name="sdm:polyPoints">R54,103.28244,177.80078,103.5,68.80078,R46</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
-      id="ControlFlowCase6"
-      from="View3"
-      to="View2">
+      id="ControlFlowCase11"
+      from="View8"
+      to="View9">
+      <property
+         name="tosrcid">__3</property>
       <property
          name="fromOutcome">*</property>
       <property
-         name="sdm:polyPoints">R54,340.02557,215.16797,495.0,214.03516,L54</property>
+         name="fromsrcid">__2</property>
+      <property
+         name="sdm:polyPoints">R54,96.5,75.80078,96.5,170.80078,R46</property>
    </ControlFlowCase>
 </SDM>
