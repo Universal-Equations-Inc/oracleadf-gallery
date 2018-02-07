@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.20.47" id="DataBindings"
+             SeparateXMLFiles="false" Package="org.universal.equations" ClientType="Generic">
+    <pageMap>
+        <page path="/templates/responsiveTemplateDef.jsf" usageId="org_universal_equations_responsiveTemplateDef"/>
+        <page path="/index.jsf" usageId="org_universal_equations_indexPageDef"/>
+        <page path="/privacy.jsf" usageId="org_universal_equations_privacyPageDef"/>
+        <page path="/templates/responsiveTemplate2.jsf" usageId="org_universal_equations_responsiveTemplate2PageDef"/>
+        <page path="/flows/home.jsf" usageId="org_universal_equations_homePageDef"/>
+    </pageMap>
+    <pageDefinitionUsages>
+        <page id="org_universal_equations_indexPageDef" path="org.universal.equations.pageDefs.indexPageDef"/>
+        <page id="org_universal_equations_privacyPageDef" path="org.universal.equations.pageDefs.privacyPageDef"/>
+        <page id="org_universal_equations_responsiveTemplateDef" path="templates.responsiveTemplateDefPageDef"/>
+        <page id="org_universal_equations_responsiveTemplate2PageDef" path="templates.responsiveTemplate2PageDef"/>
+        <page id="org_universal_equations_homePageDef" path="flows.homePageDef"/>
+    </pageDefinitionUsages>
+</Application>

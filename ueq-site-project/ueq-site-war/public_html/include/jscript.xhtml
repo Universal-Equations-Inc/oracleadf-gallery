@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns:f="http://java.sun.com/jsf/core" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+                
+    <af:resource type="javascript" source="/resources/js/modal-dialog.js"/>
+    <af:resource type="javascript" source="/resources/js/material-design-lite/material.min.js"/>
+    <af:resource type="javascript" source="/resources/js/jquery/jquery.min.js"/>
+    <af:resource type="javascript" source="/resources/js/bootstrap/bootstrap.min.js"/>
+    <!-- twitter widgets js -->
+    <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://universalequations.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8"></script>
+    <af:resource type="javascript">
+      if ('serviceWorker' in navigator) {
+          console.log("Attempting to register service worker...");
+          navigator.serviceWorker.register('/service-worker.js').then(function (reg) {
+              console.log("Service worker registered.");
+          }).
+          catch (function (err) {
+              console.log("Unable to register serice worker: ", err)
+          });
+      }
+    </af:resource>
+</ui:composition>

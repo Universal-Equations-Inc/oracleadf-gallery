@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component" xmlns:f="http://java.sun.com/jsf/core">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>viewTemplateDef</afc:display-name>
+            <afc:facet>
+                <afc:facet-name>body</afc:facet-name>
+            </afc:facet>
+        </afc:component>
+    </af:xmlContent>
+    <af:panelStretchLayout id="pt_psl1">
+        <f:facet name="start"/>
+        <f:facet name="end"/>
+        <f:facet name="top">
+            <af:panelHeader text="Technologies" id="pt_ph1">
+                <f:facet name="context"/>
+                <f:facet name="toolbar"/>
+                <f:facet name="menuBar"/>
+                <f:facet name="legend"/>
+                <f:facet name="info"/>
+            </af:panelHeader>
+        </f:facet>
+        <f:facet name="bottom"/>
+        <f:facet name="center">
+            <af:carousel id="pt_c1" value="#{root_menu}" var="technologyItem">
+                <f:facet name="nodeStamp" >
+                    <af:carouselItem id="pt_ci1" >
+                    <af:outputText value="#{technologyItem.p1}" id="ot6"/>
+                                        <af:outputText value="#{technologyItem.p2}" id="ot7"/>
+                                        <af:outputText value="#{technologyItem.p3}" id="ot8"/>
+                                        
+                                            <af:link destination="#{technologyItem.dataSheetURL}"
+                                                       style="text-decoration:none currentColor;"
+                                                       styleClass="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--primary"
+                                                       onclick="goog_report_conversion('#{technologyItem.dataSheetURL}')"
+                                                     id="l1"
+                                                value="#{i18n['here']}"
+                                            />
+                    </af:carouselItem>
+                </f:facet>
+            </af:carousel>
+        </f:facet>
+    </af:panelStretchLayout>
+</af:pageTemplateDef>

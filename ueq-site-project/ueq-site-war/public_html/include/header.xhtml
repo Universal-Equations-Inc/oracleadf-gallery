@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:f="http://java.sun.com/jsf/core" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:trh="http://myfaces.apache.org/trinidad/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-576QC6Q" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout-icon"></div>
+            <div class="mdl-layout__header-row portfolio-navigation-row">
+                <span class="mdl-layout__title mdl-color-text--primary" style="font-family: 'Yatra One', cursive;">
+                    #{i18n['u.equations.org']}</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <outputLink value="#home" class="mdl-navigation__link mdl-color-text--accent"
+                                style="font-family: 'Yatra One', cursive; font-size: larger;">
+                        #{i18n['home']}
+                    </outputLink>
+                    <outputLink value="#services" class="mdl-navigation__link mdl-color-text--accent"
+                                style="font-family: 'Yatra One', cursive; font-size: larger;">
+                        #{i18n['services']}
+                    </outputLink>
+                    <outputLink value="#about_us" class="mdl-navigation__link mdl-color-text--accent"
+                                style="font-family: 'Yatra One', cursive; font-size: larger;">
+                        #{i18n['about']}
+                    </outputLink>
+                    <outputLink value="#people" class="mdl-navigation__link mdl-color-text--accent"
+                                style="font-family: 'Yatra One', cursive; font-size: larger;">
+                        #{i18n['people']}
+                    </outputLink>
+                    <outputLink value="#technologies" class="mdl-navigation__link mdl-color-text--accent"
+                                style="font-family: 'Yatra One', cursive; font-size: larger;">
+                        #{i18n['technologies']}
+                    </outputLink>
+                    <outputLink value="#contact_us" class="mdl-navigation__link mdl-color-text--accent"
+                                style="font-family: 'Yatra One', cursive; font-size: larger;">
+                        #{i18n['contact-us']}
+                    </outputLink>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout__title mdl-color-text--primary" style="font-family: 'Yatra One', cursive;">
+                #{i18n['u.equations.org']}</span>
+             
+            <nav class="mdl-navigation">
+                <outputLink value="#home" class="mdl-navigation__link mdl-color-text--accent"
+                            style="font-family: 'Yatra One', cursive;">
+                    #{i18n['home']}
+                </outputLink>
+                <outputLink value="#services" class="mdl-navigation__link mdl-color-text--accent"
+                            style="font-family: 'Yatra One', cursive;">
+                    #{i18n['services']}
+                </outputLink>
+                <outputLink value="#about_us" class="mdl-navigation__link mdl-color-text--accent"
+                            style="font-family: 'Yatra One', cursive;">
+                    #{i18n['about']}
+                </outputLink>
+                <outputLink value="#people" class="mdl-navigation__link mdl-color-text--accent"
+                            style="font-family: 'Yatra One', cursive;">
+                    #{i18n['people']}
+                </outputLink>
+                <outputLink value="#technologies" class="mdl-navigation__link mdl-color-text--accent"
+                            style="font-family: 'Yatra One', cursive;">
+                    #{i18n['technologies']}
+                </outputLink>
+                <outputLink value="#contact_us" class="mdl-navigation__link mdl-color-text--accent"
+                            style="font-family: 'Yatra One', cursive;">
+                    #{i18n['contact-us']}
+                </outputLink>
+            </nav>
+        </div>
+    </div>
+</ui:composition>

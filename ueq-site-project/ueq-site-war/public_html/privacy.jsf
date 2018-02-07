@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EE"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtall-transitional.dtd">
+<f:view xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document largeIconSource="/img/common/ueq_logo.jpeg" smallIconSource="/img/common/ueq_logo.jpeg" title="#{i18n['title.privacy']}" id="d1">
+        <f:facet name="metaContainer">
+        
+    
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>         <meta http-equiv="X-UA-Compatible"
+                                                                                                                    content="IE=edge"/>               
+                                                                                                                    <meta name="viewport"
+                                                                                                                                                            content="width=device-width, initial-scale=1.0"/>                  <meta name="author"
+                                                                                                                                                                                                                                     content="Universal Equations Inc"/>         <meta name="description"
+                                                                                                                                                                                                                                                                                       content="Pushing the conversation around AI and lifting up Businesses and Organizations along the way.  As Tech Consultants, let us lead your journey to the cloud!"/>         <meta name="keywords"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            content="software programming, software designing, software making software, mobile applications software"/>         <meta name="google-site-verification"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       content="3v2qcpv1w7qDMQIQG6A7mTUO8GefIHEqoErRC9Fm9eA"/>         <meta property="og:type"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             content="website"/>         <meta name="twitter:site"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               content="@uequations"/>         <meta name="theme-color"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     content="#FF7F50"/> 
+    
+    
+        </f:facet>
+        <af:form id="f1">
+            <af:pageTemplate viewId="/templates/responsiveTemplateDef.jsf" value="#{bindings.ptb1}" id="pt1">
+                <f:facet name="header">
+                    <af:outputText value="#{i18n['privacy.statememt.main.header']}"
+                                    styleClass="content-head content-head-ribbon mdl-color-text--accent" id="ot1"
+                                    />
+                </f:facet>
+                <f:facet name="status"/>
+                <f:facet name="appNav">
+                    
+                    
+                        <!-- node stamp -->
+                    
+                </f:facet>
+                <f:facet name="globalLinks">
+                    <af:navigationPane hint="bar" id="np1">
+                        
+                            <af:commandNavigationItem id="cni1" styleClass="mdl-navigation__link mdl-color-text--accent"
+                                                      text="#{i18n['home']}" destination="/faces/index.jsf"/>
+                       
+                       
+                        </af:navigationPane>
+                </f:facet>
+                <f:facet name="footer">
+                    <af:panelStretchLayout id="psl1">
+                        <f:facet name="start"/>
+                        <f:facet name="end"/>
+                        <f:facet name="top"/>
+                        <f:facet name="bottom">
+                        <af:outputFormatted id="ot4" value="#{i18n['copyright']}"/>
+                        </f:facet>
+                        <f:facet name="center"/>
+                    </af:panelStretchLayout>
+                    
+                </f:facet>
+                <f:facet name="center">
+                 <af:spacer height="20px" width="10px" id="s7"/>
+                    <af:masonryLayout  id="ml1">
+                        <af:panelBox showDisclosure="false" text="#{i18n['information.collection.and.use.header']}" id="pb8">
+                            <af:panelGroupLayout layout="vertical" id="pgl8">
+                                <af:outputText value="#{i18n['information.collection.and.use.p1']}" id="ot3"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox showDisclosure="false" text="#{i18n['cookies.header']}" id="pb7">
+                            <af:panelGroupLayout layout="vertical" id="pgl7">
+                                <af:outputText value="#{i18n['cookies.p1']}" id="ot5"/>
+                                <af:outputText value="#{i18n['cookies.p2']}" id="ot6"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox showDisclosure="false" text="#{i18n['log.files.header']}" id="pb6">
+                            <af:panelGroupLayout layout="vertical" id="pgl6">
+                                <af:outputText value="#{i18n['log.files.p1']}" id="ot8"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox showDisclosure="false" text="#{i18n['sharing.header']}" id="pb5">
+                            <af:panelGroupLayout layout="vertical" id="pgl5">
+                                <af:outputText value="#{i18n['sharing.p1']}" id="ot10"/>
+                                <af:outputText value="#{i18n['sharing.p2']}" id="ot11"/>
+                                <af:outputText value="#{i18n['sharing.p3']}" id="ot12"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox showDisclosure="false" text="#{i18n['links.header']}" id="pb2">
+                            <af:panelGroupLayout layout="vertical" id="pgl2">
+                                <af:outputText value="#{i18n['links.p1']}" id="ot14"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox showDisclosure="false" text="#{i18n['notification.of.changes.header']}" id="pb1">
+                            <af:panelGroupLayout layout="vertical" id="pgl1">
+                                <af:outputText value="#{i18n['notification.of.changes.p1']}" id="ot16"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox showDisclosure="false" text="#{i18n['security.header']}" id="pb3">
+                            <af:panelGroupLayout layout="vertical" id="pgl3">
+                                <af:outputText value="#{i18n['security.p1']}" id="ot18"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox showDisclosure="false" text="#{i18n['non.personal.info.header']}" id="pb4">
+                            <af:panelGroupLayout layout="vertical" id="pgl4">
+                                <af:outputText value="#{i18n['non.personal.info.p1']}" id="ot20"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                    </af:masonryLayout>
+                    
+                </f:facet>
+                <f:facet name="start"/>
+                <f:facet name="end"/>
+                <f:attribute name="showFooter" value="true"/>
+                <f:attribute name="logoStyleClass" value="logo"/>
+                <f:attribute name="showAppNavBar" value="true"/>
+                <f:attribute name="logoImagePath" value="/img/common/ueq_logo.jpeg"/>
+                <f:attribute name="logoSmallImagePath" value="/img/common/ueq_logo.jpeg"/>
+            </af:pageTemplate>
+        </af:form>
+        
+    </af:document>
+</f:view>

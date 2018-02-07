@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trinidad-config xmlns="http://myfaces.apache.org/trinidad/config">
+  <accessibility-profile>high-contrast</accessibility-profile>
+  <!--<skin-family>skyros</skin-family>
+  <skin-version>v1</skin-version>-->
+  <skin-family>site</skin-family>
+  <!--<skin-version>v1</skin-version>-->
+  <animation-enabled>false</animation-enabled>
+  <debug-output>true</debug-output>
+</trinidad-config>

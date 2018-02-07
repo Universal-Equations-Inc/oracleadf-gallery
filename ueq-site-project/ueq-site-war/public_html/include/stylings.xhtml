@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- do not reformat this because of special characters !!! -->
+<ui:composition xmlns:f="http://java.sun.com/jsf/core" 
+xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:trh="http://myfaces.apache.org/trinidad/html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets" 
+xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+         <!--Google Tag Manager -->
+        <af:resource type="javascript">
+(function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push( {
+                  'gtm.start' : new Date().getTime(), event : 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&amp;l=' + l : '';
+              j.async = true;
+              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-576QC6Q');
+        </af:resource>
+        <!-- End Google Tag Manager --> 
+        
+         <!-- include the meta viewport tag in your document so mobile devices will render correctly -->
+       
+        <link rel="shortcut icon" href="img/common/favicon.png"/>
+        
+        <!--[if lte IE 8]><af:resource type="css" source="resources/css/pure/grids-responsive-old-ie-min.css"/><![endif]-->
+        <!--[if gt IE 8]><!-->
+        <af:resource type="css" source="resources/css/pure/grids-responsive-min.css"/>
+        <!--[endif]-->
+        <script async="async" src="https://use.fontawesome.com/66b4706ac1.js"></script>
+        <!--[if lte IE 8]>
+        <af:resource type="css" source="resources/css/marketing-old-ie.css"/>
+    <![endif]-->
+        <!--[if gt IE 8]><!-->
+        
+        <af:resource type="css" source="resources/css/marketing.css"/>
+        <af:resource type="css" source="resources/css/main.css"/>
+        <af:resource type="css" source="resources/css/modal-dialog.css"/>
+        <af:resource type="css" source="resources/css/bootstrap/bootstrap.min.css"/>
+        <af:resource type="css" source="resources/css/pure/pure-min.css"/>
+          
+        <!--<![endif]-->
+        <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.cyan-deep_orange.min.css"/>
+        <link rel="manifest" href="resources/manifest/manifest.json"/>
+        
+        <af:resource type="css">
+            .mdl-layout__drawer-button {
+                color: cyan;
+            }
+        </af:resource>
+
+</ui:composition>

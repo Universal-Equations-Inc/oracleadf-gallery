@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skins xmlns="http://myfaces.apache.org/trinidad/skin">
+<!--<skin>
+<id>boostrap.desktop</id>
+<family>site</family>
+<extends>simple.desktop</extends>
+<render-kit-id>org.apache.myfaces.trinidad.desktop</render-kit-id>
+<style-sheet-name>resources/css/bootstrap/bootstrap.css</style-sheet-name>
+</skin>-->
+<!--<skin>
+<id>mdl.desktop</id>
+<family>site</family>
+<extends>simple.desktop</extends>
+<render-kit-id>org.apache.myfaces.trinidad.desktop</render-kit-id>
+<style-sheet-name>resources/css/material-design-lite/material.css</style-sheet-name>
+</skin>-->
+<!--<skin>
+<id>mdl.desktop</id>
+<family>site</family>
+<extends>simple.desktop</extends>
+<render-kit-id>org.apache.myfaces.trinidad.desktop</render-kit-id>
+<style-sheet-name>resources/css/material-design-lite/material.cyan-deep_orange.min.css</style-sheet-name>
+</skin>-->
+<skin>
+<id>fuse-iu.desktop</id>
+<family>site</family>
+<extends>simple.desktop</extends>
+<render-kit-id>org.apache.myfaces.trinidad.desktop</render-kit-id>
+<style-sheet-name>resources/css/fuse/fuse-ui.css</style-sheet-name>
+</skin>
+</skins>

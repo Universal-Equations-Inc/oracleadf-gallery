@@ -260,8 +260,16 @@
                         </list>
                      </hash>
                      <value n="internalName" v="libraries"/>
+                     <list n="selectedLibraries">
+                        <string v="ADF Faces Change Manager Runtime 11"/>
+                     </list>
                      <value n="targetWithinJar" v="WEB-INF/lib"/>
                      <value n="type" v="3"/>
+                     <list n="unselectedLibraries">
+                        <string v="Adflibfilter.jar"/>
+                        <string v="file:/Users/malkeb723/Applications/Oracle_Home/jdeveloper/mywork/mywork/oracleadf-gallery/oracleadf-gallery/ueq-site-project/ADF_Library_Dependencies.library"/>
+                        <string v="Trinidad Databinding Runtime"/>
+                     </list>
                   </hash>
                </list>
             </hash>
@@ -276,8 +284,8 @@
          </hash>
       </hash>
       <list n="profileList">
-         <string v="ueq_weblogic_war"/>
          <string v="ueq_glassfish_war"/>
+         <string v="ueq_weblogic_war"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
@@ -299,6 +307,7 @@
          <hash n="Default">
             <value n="custom" v="false"/>
             <list n="EnvironmentVariables"/>
+            <value n="javaOptions" v="-DserverType=&quot;wlx&quot;"/>
             <value n="name" v="Default"/>
             <url n="runDirectoryURL" path="."/>
             <value n="targetURL"/>
@@ -404,7 +413,7 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Adflibfilter.jar"/>
+            <value n="id" v="Adflibfilter.jar1"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -419,21 +428,37 @@
             <value n="id" v="Adfm.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Taglib.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Support"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Variable Resolver"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Faces Change Manager Runtime 11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <hash n="internalDefinitions">
          <list n="libraryDefinitions">
             <hash>
                <list n="classPath">
-                  <url path="../../../../../oracle_common/modules/oracle.adf.model/adflibfilter.jar" jar-entry=""/>
+                  <url path="../../../../../../oracle_common/modules/oracle.adf.model/adflibfilter.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Adflibfilter.jar"/>
-               <value n="id" v="Adflibfilter.jar"/>
+               <value n="description" v="Adflibfilter.jar1"/>
+               <value n="id" v="Adflibfilter.jar1"/>
                <value n="locked" v="true"/>
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../oracle_common/modules/com.oracle.ojsp.ojsp.jar" jar-entry=""/>
+                  <url path="../../../../../../oracle_common/modules/com.oracle.ojsp.ojsp.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Com.oracle.ojsp.ojsp.jar"/>
@@ -442,7 +467,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../oracle_common/modules/oracle.adf.model/adfmweb.jar" jar-entry=""/>
+                  <url path="../../../../../../oracle_common/modules/oracle.adf.model/adfmweb.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Adfmweb.jar"/>
@@ -451,11 +476,20 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../oracle_common/modules/oracle.adf.model/adfm.jar" jar-entry=""/>
+                  <url path="../../../../../../oracle_common/modules/oracle.adf.model/adfm.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Adfm.jar"/>
                <value n="id" v="Adfm.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../oracle_common/modules/oracle.facesconfigdt/taglib.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Taglib.jar"/>
+               <value n="id" v="Taglib.jar"/>
                <value n="locked" v="true"/>
             </hash>
          </list>
@@ -558,7 +592,7 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Adflibfilter.jar"/>
+            <value n="id" v="Adflibfilter.jar1"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -571,6 +605,30 @@
          </hash>
          <hash>
             <value n="id" v="Adfm.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Domain Deployment - ADF View Controller"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="ADF_Library_Dependencies.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Taglib.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Support"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Variable Resolver"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Faces Change Manager Runtime 11"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
@@ -690,6 +748,26 @@
             <value n="URI" v="http://xmlns.oracle.com/dss/adf/faces"/>
             <value n="version" v="1.1"/>
          </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.webapp.jsp.JspVeProjectSettings">
+      <list n="filters">
+         <string v="trinidad"/>
+         <string v="ADFLibraryFilter"/>
+         <string v="ACF"/>
+      </list>
+      <list n="servlet_listeners">
+         <string v="com.sun.faces.config.ConfigureListener"/>
+         <string v="oracle.adf.mbean.share.config.ADFConfigLifeCycleCallBack"/>
+      </list>
+      <list n="servlet_listeners_unselected"/>
+      <list n="servlets">
+         <string v="Faces Servlet"/>
+         <string v="resources"/>
+         <string v="BIGRAPHSERVLET"/>
+         <string v="BIGAUGESERVLET"/>
+         <string v="MapProxyServlet"/>
+         <string v="adflibResources"/>
       </list>
    </hash>
    <hash n="oracle.jdevimpl.webapp.jsp.libraries.model.ProjectTagLibraries">

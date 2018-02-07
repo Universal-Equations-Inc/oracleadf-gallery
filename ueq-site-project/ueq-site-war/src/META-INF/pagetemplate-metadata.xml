@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageTemplateDefs xmlns="http://xmlns.oracle.com/adf/faces/rich/pagetemplate">
+  <pagetemplate-jsp-ui-def>/templates/responsiveTemplate2.jsf</pagetemplate-jsp-ui-def>
+  <pagetemplate-jsp-ui-def>/templates/technologiesCarouselTemplateDef.jsf</pagetemplate-jsp-ui-def>
+  <pagetemplate-jsp-ui-def>/templates/responsiveTemplateDef.jsf</pagetemplate-jsp-ui-def>
+</pageTemplateDefs>

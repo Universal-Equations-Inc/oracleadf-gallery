@@ -1,0 +1,29 @@
+.coffee-shop-background {
+    background: url(../../img/common/coffee-shop-background.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.cloud-data-center-background {
+    background: url(../img/common/cloud-data-center-background.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.busy-at-work-background {
+    background: url(../../img/common/busy-at-work-background.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.west-philly-background {
+    background: url(../../img/common/website-landing-background.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.general-relativity-background{
+    background: url(../../img/common/general-relativity-background.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.clusters-background{
+    background: url(../../img/common/clusters-background.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}

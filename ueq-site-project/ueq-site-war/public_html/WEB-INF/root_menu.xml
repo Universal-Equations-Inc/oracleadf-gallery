@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns="http://myfaces.apache.org/trinidad/menu">
+  <itemNode id="itemNode_home" label="label_home" action="adfMenu_home" focusViewId="/home" destination="/faces/index.jsf">
+    <sharedNode ref="#{technologies_menu}"/>
+  </itemNode>
+  <itemNode id="itemNode_about" label="label_about" action="adfMenu_about" focusViewId="/about"/>
+  <itemNode id="itemNode_people" label="label_people" action="adfMenu_people" focusViewId="/people"/>
+  <itemNode id="itemNode_services" label="label_services" action="adfMenu_services" focusViewId="/services"/>
+  <itemNode id="itemNode_privacy" label="label_privacy" action="adfMenu_privacy" focusViewId="/privacy"
+            destination="/faces/privacy.jsf"/>
+  <itemNode id="itemNode_technologies" label="label_technologies" action="adfMenu_technologies"
+            focusViewId="/technologies"/>
+</menu>

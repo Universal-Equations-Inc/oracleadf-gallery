@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns="http://myfaces.apache.org/trinidad/menu">
+  <groupNode id="itemNode_technologies" label="label_technologies" idref="itemNode_mysql">
+    <itemNode id="itemNode_mysql" label="label_mysql" action="adfMenu_mysql" focusViewId="/mysql"
+    p1=""
+    p2=""
+    p3=""
+    dataSheetURL=""
+    />
+    <itemNode id="itemNode_oracleLinux" label="label_oracleLinux" action="adfMenu_oracleLinux"
+              focusViewId="/oracleLinux"
+    p1=""
+    p2=""
+    p3=""
+    dataSheetURL=""/>
+    <itemNode id="itemNode_peoplesoft" label="label_peoplesoft" action="adfMenu_peoplesoft" focusViewId="/peoplesoft"
+    p1=""
+    p2=""
+    p3=""
+    />
+    <itemNode id="itemNode_adf" label="label_adf" action="adfMenu_adf" focusViewId="/adf"
+    p1=""
+    p2=""
+    p3=""
+    />
+  </groupNode>
+</menu>

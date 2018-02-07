@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component" xmlns:f="http://java.sun.com/jsf/core"
+                    xmlns="http://www.w3.org/1999/xhtml">
+    <af:xmlContent>
+    
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>responsiveTemplateDef</afc:display-name>
+            <afc:facet>
+                <afc:facet-name>header</afc:facet-name>
+            </afc:facet>
+            <afc:facet>
+                <afc:facet-name>status</afc:facet-name>
+            </afc:facet>
+            <afc:facet>
+                <afc:facet-name>appNav</afc:facet-name>
+            </afc:facet>
+            <afc:facet>
+                <afc:facet-name>globalLinks</afc:facet-name>
+            </afc:facet>
+            <afc:facet>
+                <afc:facet-name>footer</afc:facet-name>
+            </afc:facet>
+            <afc:facet>
+                <afc:facet-name>center</afc:facet-name>
+            </afc:facet>
+            <afc:facet>
+                <afc:facet-name>start</afc:facet-name>
+            </afc:facet>
+            <afc:facet>
+                <afc:facet-name>end</afc:facet-name>
+            </afc:facet>
+            <afc:attribute>
+                <afc:attribute-name>logoImagePath</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>logoSmallImagePath</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>logoStyleClass</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>logoShortDesc</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>showAppNavBar</afc:attribute-name>
+                <afc:attribute-class>java.lang.Boolean</afc:attribute-class>
+                <afc:default-value>true</afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>brandingMaxWidth</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+                <afc:default-value>1024px</afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>minWidth</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>startWidth</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+                <afc:default-value>170</afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>endWidth</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+                <afc:default-value>170</afc:default-value>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>showFooter</afc:attribute-name>
+                <afc:attribute-class>java.lang.Boolean</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>showStatusIndicator</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+        </afc:component>
+    </af:xmlContent>
+    
+    <af:group id="grp1">
+    
+
+         
+            
+        <noscript></noscript>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <link rel="manifest"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  href="/resources/manifest/manifest.json"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <link rel="shortcut icon"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            href="../img/common/ueq_logo.jpeg"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        <af:inlineFrame shortDesc="Google Tag Manager" source="https://www.googletagmanager.com/ns.html?id=GTM-576QC6Q"
+                        inlineStyle="display:none;visibility:hidden;height:0;width:0;" id="if1"/>
+        <!--<f:verbatim>-->
+        
+        <!-- misc -->
+        <!-- do not move this -->
+        <af:resource source="https://fonts.googleapis.com/css?family=Yatra+One" type="css"/>
+        <af:resource type="css" source="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <af:resource type="css" source="https://code.getmdl.io/1.3.0/material.cyan-deep_orange.min.css"/>
+        <!--<af:resource type="css" source="/resources/css/pure/grids-responsive-min.css"/>-->
+        <!--<af:resource type="css" source="/resources/css/marketing.css"/>-->
+        <af:resource type="css" source="/resources/css/main.css"/>
+        <af:resource type="css" source="/resources/css/modal-dialog.css"/>
+        <!--<af:resource type="css" source="/resources/css/bootstrap/bootstrap.min.css"/>-->
+        <!-- <af:resource type="css" source="/resources/css/pure/pure-min.css"/>-->
+        
+        <af:resource type="css" source="/styles/brandingBar.css"/>
+        <af:resource type="css" source="/styles/tabletFirstTemplate.css"/>
+        <af:resource type="javascript" source="/jsLibs/brandingBar.js"/>
+        <af:resource type="javascript"/>
+        <!-- javascript-->
+        <af:resource type="javascript" source="/resources/js/modal-dialog.js"/>
+        <af:resource type="javascript" source="/resources/js/material-design-lite/material.min.js"/>
+        <af:resource type="javascript" source="/resources/js/jquery/jquery.min.js"/>
+        <!--<af:resource type="javascript" source="/resources/js/bootstrap/bootstrap.min.js"/>-->
+        <!-- twitter widgets js -->
+        <af:resource type="javascript" source="https://platform.twitter.com/widgets.js"/>
+        <!--Google Tag Manager -->
+        <af:resource type="javascript" source="https://use.fontawesome.com/66b4706ac1.js"/>
+        <af:resource type="javascript" source="/resources/js/googleTagManager.js"/>
+        
+        <af:panelGroupLayout id="mainArea" styleClass="tablet-first-main-area" layout="vertical">
+            <af:panelGroupLayout layout="vertical" id="_afrBrandingContainer" halign="center"
+                                 styleClass="AFBrandingBar #{attrs.showAppNavbar ? 'AFBrandingBarTall' : 'AFBrandingBarCompact'}"
+                                 clientComponent="true">
+                <af:panelGridLayout landmark="navigation" inlineStyle="background-color: rgb(66,66,66);"  id="branding"
+                                    styleClass="#{attrs.brandingMaxWidth == '1440px' ? 'BrandingMaxWidth-1440' :                                         (attrs.brandingMaxWidth == '1280px') ? 'BrandingMaxWidth-1280' :                                            (attrs.brandingMaxWidth == '1024px') ? 'BrandingMaxWidth-1024' : 'BrandingMaxWidth'}"
+                                    dimensionsFrom="auto" clientComponent="true">
+                    <af:gridRow marginTop="0px" height="24px" id="pt_gr2">
+                        <af:gridCell  marginStart="20px" marginEnd="0px" width="50%" id="pt_gc4" halign="start"
+                                     rowSpan="2">
+                            <af:panelGroupLayout id="logo" layout="horizontal"
+                                                 styleClass="AFBrandingLogoTitleContainer">
+                                <af:link id="logoLink" icon="#{attrs.logoImagePath }" action="index"
+                                         shortDesc="#{attrs.logoShortDesc}"
+                                         styleClass="#{attrs.logoStyleClass? attrs.logoStyleClass: '' } AFBrandingLogo"
+                                         rendered="#{attrs.logoImagePath != null}"
+                                        />
+                                <af:link id="logoLinkAlt" action="index" shortDesc="#{attrs.logoShortDesc}"
+                                         styleClass="AFBrandingBarLogoLarge AFBrandingLogo"
+                                         rendered="#{attrs.logoImagePath == null}"/>
+                                <af:link id="logoLinkSm" icon="#{attrs.logoSmallImagePath}" action="index"
+                                         shortDesc="#{attrs.logoShortDesc}" visible="false"
+                                         styleClass="#{attrs.logoStyleClass? attrs.logoStyleClass: '' } AFBrandingLogo"
+                                         rendered="#{attrs.logoSmallImagePath != null}"
+                                         />
+                                <af:link id="logoLinkAltSm" action="index" shortDesc="#{attrs.logoShortDesc}"
+                                         visible="false" styleClass="AFBrandingBarLogo AFBrandingLogo"
+                                         rendered="#{attrs.logoSmallImagePath == null}"/>
+                                <af:panelGroupLayout id="title" layout="horizontal" styleClass="AFBrandingBarTitle">
+                                    <af:facetRef facetName="header"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:gridCell>
+                        <af:gridCell marginStart="0px" width="50%" marginEnd="20px" id="pt_gc5" halign="end">
+                            <af:panelGroupLayout valign="middle" layout="horizontal" styleClass="AFBrandingBarItem"
+                                                 id="gllink">
+                                <af:facetRef facetName="globalLinks"/>
+                                <af:facetRef facetName="status"/>
+                                <af:statusIndicator rendered="#{attrs.showStatusIndicator}" styleClass="" id="status"/>
+                            </af:panelGroupLayout>
+                        </af:gridCell>
+                    </af:gridRow>
+                    <af:gridRow marginTop="0px" height="auto" marginBottom="0px" id="pt_gr3"
+                                rendered="#{attrs.showAppNavbar}">
+                        <af:gridCell marginStart="0px" width="50%" marginEnd="20px" id="pt_gc7" halign="end">
+                            <af:panelGroupLayout layout="horizontal" rendered="#{attrs.showAppNavbar}" id="navig"
+                                                 styleClass="AFAppNavbarContainer">
+                                                 <af:outputText value="x" id="pt_ot1"/>
+                                <af:facetRef facetName="appNav"/>
+                            </af:panelGroupLayout>
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+            </af:panelGroupLayout>
+            
+            <af:panelSplitter id="mainCont" orientation="horizontal" splitterPosition="#{attrs.startWidth}"
+                              styleClass="tablet-first-content-container #{(attrs.brandingMaxWidth == '1440px') ? 'BrandingMaxWidth-1440' :                                         (attrs.brandingMaxWidth == '1280px') ? 'BrandingMaxWidth-1280' :                                            (attrs.brandingMaxWidth == '1024px') ? 'BrandingMaxWidth-1024' : 'BrandingMaxWidth'}"
+                              dimensionsFrom="children" inlineStyle="min-width: #{attrs.minWidth}" disabled="true">
+                <af:matchMediaBehavior propertyName="orientation" matchedPropertyValue="vertical"
+                                       mediaQuery="screen and (max-width: 768px)"/>
+                <af:matchMediaBehavior propertyName="splitterPosition" matchedPropertyValue="0"
+                                       mediaQuery="screen and (max-width: 768px)"/>
+                <af:matchMediaBehavior propertyName="styleClass"
+                                       matchedPropertyValue="BrandingMaxWidth-1024 tablet-first-content-container-flowing"
+                                       mediaQuery="screen and (max-width: 768px)"/>
+                <f:facet name="first">
+                    <af:facetRef facetName="start"/>
+                </f:facet>
+                <f:facet name="second">
+                    <af:panelSplitter id="contentAndEnd" orientation="horizontal" dimensionsFrom="children"
+                                      splitterPosition="#{attrs.endWidth}" positionedFromEnd="true" disabled="true">
+                        <af:matchMediaBehavior propertyName="orientation" matchedPropertyValue="vertical"
+                                               mediaQuery="screen and (max-width: 768px)"/>
+                        <af:matchMediaBehavior propertyName="splitterPosition" matchedPropertyValue="200"
+                                               mediaQuery="screen and (max-width: 768px)"/>
+                        <f:facet name="first">
+                            <af:facetRef facetName="center"/>
+                        </f:facet>
+                        <f:facet name="second">
+                            <af:facetRef facetName="end"/>
+                        </f:facet>
+                    </af:panelSplitter>
+                </f:facet>
+            </af:panelSplitter>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="footerArea" styleClass="tablet-first-footer-area" layout="vertical">
+            <af:group id="grp2">
+                <af:panelGroupLayout layout="vertical" valign="middle" id="footPgl"
+                                     styleClass="AFFooterBar #{attrs.showAppNavbar ? 'AFBrandingBarTall' : ''}"
+                                     halign="center" clientComponent="true" rendered="#{attrs.showFooter}">
+                    <af:panelGridLayout id="pt_pgl4"
+                                        styleClass="#{attrs.brandingMaxWidth == '1440px' ? 'BrandingMaxWidth-1440' :(attrs.brandingMaxWidth == '1280px') ? 'BrandingMaxWidth-1280' :(attrs.brandingMaxWidth == '1024px') ? 'BrandingMaxWidth-1024' : 'BrandingMaxWidth'}">
+                        <af:gridRow marginTop="5px" height="auto" id="pt_gr5">
+                            <af:gridCell marginStart="20px" width="100%" marginEnd="20px" id="pt_gc6" halign="start">
+                                <af:facetRef facetName="footer"/>
+                            </af:gridCell>
+                        </af:gridRow>
+                    </af:panelGridLayout>
+                </af:panelGroupLayout>
+            </af:group>
+        </af:panelGroupLayout>
+    </af:group>
+</af:pageTemplateDef>

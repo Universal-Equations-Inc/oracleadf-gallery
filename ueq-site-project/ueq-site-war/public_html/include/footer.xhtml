@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:f="http://java.sun.com/jsf/core" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:trh="http://myfaces.apache.org/trinidad/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:tr="http://myfaces.apache.org/trinidad">
+    <footer class="mdl-mega-footer">
+        <!-- Social Media Section -->
+        <div class="mdl-mega-footer--middle-section">
+            <h6 class="mdl-mega-footer--heading mdl-color-text--accent" style="text-align:center;">
+                #{i18n['follow.us']}
+            </h6>
+            <p align="center">
+                <tr:goLink id="footer_twitter" destination="https://twitter.com/uequations" styleClass="twitter-follow-button"
+                            data-show-count="false">
+                    #{i18n['follow.us.on.twitter']}
+                </tr:goLink>
+                
+            </p>
+        </div>
+        <!-- dandb -->
+        <div class="mdl-mega-footer--right-section">
+            <p align="center">
+                <a id="footer_dnb" href="https://www.dandb.com/verified/business/113360214/" rel="nofollow"
+                   target="_blank">
+                    <img class="mdl-color-text--accent" src="https://www.dandb.com/verified/seal/pixel/?t=113360214"
+                         alt="dandb"/></a>
+            </p>
+            <p align="center">
+                <tr:goLink id="footer_privacy" destination="privacy.xhtml" styleClass="twitter-follow-button"
+                            data-show-count="false">
+                    #{i18n['privacy']}
+                </tr:goLink>
+            </p>
+        </div>
+        <!-- copyright -->
+        <p align="center">
+            #{i18n['copyright']}
+        </p>
+    </footer>
+</ui:composition>

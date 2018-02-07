@@ -24,6 +24,7 @@
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="ueq-site-project.jpr"/></hash>
+      <hash><url n="URL" path="ueq-site-war/ueq-site-war.jpr"/></hash>
       <hash><url n="URL" path="../../ueq-site-application/ueq-site-project/ueq-site-project.jpr"/></hash>
    </list>
 </jws:workspace>

@@ -4,7 +4,7 @@
   <pageMap>
     <page path="public_html/OneColumnHeaderAndFooterTemplateDef.xhtml"
           usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
-    <page path="/OneColumnHeaderAndFooterTemplateDef.xhtml"
+    <page path="/templates/OneColumnHeaderAndFooterTemplateDef.xhtml"
           usageId="ueqsiteproject_OneColumnHeaderAndFooterTemplateDefPageDef"/>
     <page path="public_html/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>
     <page path="/index.xhtml" usageId="ueqsiteproject_indexPageDef"/>

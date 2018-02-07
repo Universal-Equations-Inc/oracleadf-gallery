@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE html>
 <f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-    <af:document title="index.xhtml" id="d1">
+    <af:document largeIconSource="/resources/images/young_women_logo_circle.png" smallIconSource="/resources/images/young_women_logo_circle.png"
+                 title="#{i18n['title.landing']}" id="d1"
+                 failedConnectionText="A connection cannot be made to the server.">
     
     <!-- metaContainer here -->
     <f:facet name="metaContainer">
@@ -21,12 +23,67 @@
         </f:facet>
     
         <af:form id="f1">
-            <af:pageTemplate viewId="/OneColumnHeaderAndFooterTemplateDef.xhtml" value="#{bindings.ptb2}" id="pt1"> 
-            <f:facet name="first">
+            <af:pageTemplate viewId="/templates/OneColumnHeaderAndFooterTemplateDef.xhtml" value="#{bindings.ptb2}" id="pt1"> 
+            
+            <f:facet name="content">
                         <!-- Content -->
+                        <af:spacer height="60px" width="10px" id="s7"/>
+                        <af:panelGroupLayout halign="center" layout="vertical" id="pgl5">
+                        <af:panelBox  background="light" contentStyle="max-width: none; text-align: center;" showDisclosure="false"
+                                     id="pb11" inlineStyle="
+	background-image: url(resources/images/young_women_logo_circle.png);
+        background-size: cover;
+        max-width: 30%;
+        background-repeat: no-repeat;
+        background-position: center center;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+        text-align: center;
+        padding: 14%;">
+        </af:panelBox>
+        <af:panelBox  styleClass="" showDisclosure="false" id="pb9">
+                            <af:panelGroupLayout halign="center" inlineStyle="margin: 25px; font-weight: 100;" layout="vertical" id="pgl18">
+                                <af:outputText styleClass=""
+                                               value="#{i18n['pushing.convo']}" id="ot22"/>
+                                               <af:spacer height="10" id="s13"/>
+                                <af:outputText noWrap="false" styleClass=""
+                                               value="#{i18n['we.offer']}" id="of8"/>
+                                               <af:spacer height="10" id="s12"/>
+                                <af:outputText noWrap="false" styleClass=""
+                                               value="#{i18n['the.cloud']}" id="ot23"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:separator id="s1"/>
+        </af:panelGroupLayout>
+        
                     </f:facet>
-                    <f:facet name="second">
-                        <!-- Footer -->
+                    <f:facet name="footer">
+                        <af:panelStretchLayout styleClass="mdl-color--primary-contrast" centerLandmark="navigation"
+                                           bottomLandmark="contentinfo" startWidth="340px" endWidth="170px" id="psl1">
+                        <f:facet name="start">
+                            <af:panelBox showDisclosure="false" text="#{i18n['follow.us']}" id="pb15">
+                                <f:facet name="toolbar"/>
+                                <af:link text="#{i18n['follow.us.on.twitter']}" id="l5"
+                                         destination="https://twitter.com/uequations" styleClass="twitter-follow-button"
+                                         data-show-count="false"/>
+                            </af:panelBox>
+                        </f:facet>
+                        <f:facet name="end">
+                            <af:panelBox showDisclosure="false" id="pb17">
+                                <af:link inlineStyle="vertical-align: text-bottom;" destination="/faces/privacy.jsf"
+                                         text="#{i18n['privacy']}"
+                                         styleClass="" id="l7"/>
+                            </af:panelBox>
+                        </f:facet>
+                        <f:facet name="top"/>
+                        <f:facet name="bottom">
+                            <af:outputFormatted styleClass="" id="ot4"
+                                                value="#{i18n['copyright']}"/>
+                        </f:facet>
+                        <f:facet name="center"></f:facet>
+                    </af:panelStretchLayout>
                     </f:facet>
             </af:pageTemplate>
         </af:form>

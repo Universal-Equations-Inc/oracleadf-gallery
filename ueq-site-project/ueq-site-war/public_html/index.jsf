@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EE"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtall-transitional.dtd">
+<f:view xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document largeIconSource="/img/common/ueq_logo.jpeg" smallIconSource="/img/common/ueq_logo.jpeg"
+                 title="#{i18n['title.landing']}" id="d1">
+        <f:facet name="metaContainer">
+            <?audit suppress oracle.jdeveloper.jsp.validate-children?>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <meta name="author" content="Universal Equations Inc"/>
+            <meta name="description"
+                  content="Pushing the conversation around AI and lifting up Businesses and Organizations along the way.  As Tech Consultants, let us lead your journey to the cloud!"/>
+            <meta name="keywords"
+                  content="software programming, software designing, software making software, mobile applications software"/>
+            <meta name="google-site-verification" content="3v2qcpv1w7qDMQIQG6A7mTUO8GefIHEqoErRC9Fm9eA"/>
+            <meta property="og:type" content="website"/>
+            <meta name="twitter:site" content="@uequations"/>
+            <meta name="theme-color" content="#FF7F50"/>
+        </f:facet>
+        <af:form id="f1">
+            <af:pageTemplate viewId="/templates/responsiveTemplateDef.jsf" value="#{bindings.ptb1}" id="index">
+                <af:resource type="css">
+                    html, body {
+                        font-family: 'Helvetica', 'Arial', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                </af:resource>
+                <!-- attributes -->
+                <f:attribute name="logoStyleClass" value="logo"/>
+                <f:attribute name="showAppNavBar" value="false"/>
+                <f:attribute name="showFooter" value="true"/>
+                <f:attribute name="logoImagePath" value="/img/common/ueq_logo.jpeg"/>
+                <f:attribute name="logoSmallImagePath" value="/img/common/ueq_logo.jpeg"/>
+                <!-- facet header -->
+                <f:facet name="header">
+                    <af:outputText value="#{i18n['landing.page.main.header']}"
+                                   styleClass="content-head content-head-ribbon mdl-color-text--accent" id="ot1"/>
+                </f:facet>
+                <f:facet name="status">
+                    <af:messages id="m1"/>
+                </f:facet>
+                <f:facet name="appNav">
+                    <af:outputText id="ol1" value="#{i18n['u.equations.org']}"
+                                   styleClass="mdl-layout__title mdl-color-text--primary" inlineStyle=""/>
+                </f:facet>
+                <f:facet name="globalLinks">
+                    <af:navigationPane styleClass="mdl-navigation mdl-color--primary-contrast" hint="bar" id="np1">
+                        <af:commandNavigationItem id="cni2" text="#{i18n['services']}"
+                                                  styleClass="mdl-navigation__link mdl-color-text--accent"
+                                                  destination="#index:services">
+                            <af:scrollComponentIntoViewBehavior componentId="services"/>
+                        </af:commandNavigationItem>
+                        <af:commandNavigationItem id="cni3" text="#{i18n['about']}"
+                                                  styleClass="mdl-navigation__link mdl-color-text--accent"
+                                                  destination="#index:about">
+                            <af:scrollComponentIntoViewBehavior componentId="about"/>
+                        </af:commandNavigationItem>
+                        <af:commandNavigationItem id="cni4" text="#{i18n['people']}"
+                                                  styleClass="mdl-navigation__link mdl-color-text--accent"
+                                                  destination="#index:people">
+                            <af:scrollComponentIntoViewBehavior componentId="people"/>
+                        </af:commandNavigationItem>
+                        <af:commandNavigationItem id="cni1" text="#{i18n['blog']}"
+                                                  styleClass="mdl-navigation__link mdl-color-text--accent"
+                                                  destination="#{i18n['blog.url']}">
+                        </af:commandNavigationItem>
+                        <af:commandNavigationItem id="cni5" text="#{i18n['technologies']}"
+                                                  styleClass="mdl-navigation__link mdl-color-text--accent"
+                                                  destination="#index:technologies">
+                            <af:scrollComponentIntoViewBehavior componentId="technologies"/>
+                        </af:commandNavigationItem>
+                        <af:commandNavigationItem id="cni6" text="#{i18n['contact-us']}"
+                                                  styleClass="mdl-navigation__link mdl-color-text--accent"
+                                                  destination="#index:contact">
+                            <af:scrollComponentIntoViewBehavior componentId="contact"/>
+                        </af:commandNavigationItem>
+                    </af:navigationPane>
+                </f:facet>
+                <f:facet name="center">
+                    <af:spacer height="10px" width="10px" id="s7"/>
+                    <af:panelGroupLayout layout="vertical" id="pgl5">
+                        <af:panelBox contentStyle="max-width: none; text-align: center;" showDisclosure="false"
+                                     id="pb11" inlineStyle="
+	background-image: url(img/common/cloud-data-center-background.jpg);
+        background-size: cover;
+        max-width: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+        text-align: center;
+        padding: 14%;
+        ">
+                            <af:panelGroupLayout halign="center" layout="vertical" landmark="banner" id="pgl8">
+                                <af:outputText id="ot2" value="#{i18n['universal.equations']}" itemprop="name" inlineStyle="
+                                               text-align: center;
+                                               background-color: rgb(66, 66, 66) !important;
+                                                font-size: 250%;
+                                               font-weight: 400;
+                                               line-height: 48px;
+                                               letter-spacing: -0.02em;
+                                               margin-top: 24px; 
+                                               margin-bottom: 24px;
+                                               font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+                                               " styleClass="mdl-color-text--primary"/>
+                                <af:outputText id="ot3" value="#{i18n['modernizing.the.human.experience']}"
+                                               styleClass="mdl-color--accent-contrast mdl-color-text--accent" inlineStyle="
+                                        text-align: center;
+                                               font-size: 190%;
+                                               font-weight: 400;
+                                               line-height: 40px;
+                                               letter-spacing: -0.02em;
+                                               margin-top: 24px; 
+                                               margin-bottom: 24px;
+                                               font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+                                               "/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:panelBox styleClass="mdl-color--primary-contrast" showDisclosure="false" id="pb9">
+                            <af:panelGroupLayout inlineStyle="margin: 25px; font-weight: 100;" layout="vertical" id="pgl18">
+                                <af:outputText styleClass="medium-text mdl-color-text--primary"
+                                               value="#{i18n['pushing.convo']}" id="ot22"/>
+                                               <af:spacer height="10" id="s13"/>
+                                <af:outputText noWrap="false" styleClass="medium-text mdl-color-text--primary"
+                                               value="#{i18n['we.offer']}" id="of8"/>
+                                               <af:spacer height="10" id="s12"/>
+                                <af:outputText noWrap="false" styleClass="medium-text mdl-color-text--primary"
+                                               value="#{i18n['the.cloud']}" id="ot23"/>
+                            </af:panelGroupLayout>
+                        </af:panelBox>
+                        <af:separator id="s1"/>
+                        <af:panelBox styleClass="mdl-color--primary-contrast" showDisclosure="false" id="pb10">
+                            <af:panelGridLayout id="pgl20">
+                                <af:gridRow marginTop="5px" height="auto" id="gr13">
+                                    <af:gridCell styleClass="AFStretchWidth" halign="center" marginStart="5px"
+                                                 marginEnd="5px" id="gc27">
+                                        <af:outputText clientComponent="true"
+                                                       styleClass="mdl-typography--text-center large-text mdl-color-text--accent"
+                                                       value="#{i18n['services']}" id="services"/>
+                                    </af:gridCell>
+                                </af:gridRow>
+                            </af:panelGridLayout>
+                        </af:panelBox>
+                        <af:panelDashboard columns="2" id="pd2" rowHeight="200px">
+                            <af:panelBox inlineStyle="" styleClass="content-subhead mdl-color-text--accent"
+                                         showDisclosure="false" text="#{i18n['charter.schools']}" id="pb5">
+                                <f:facet name="toolbar"/>
+                                <af:spacer id="s8"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl1">
+                                    <af:outputFormatted value="Let us put our student-centered data models to work."
+                                                        id="ot17"/>
+                                    <af:outputFormatted value="Give us your data, and we'll give you a model that will inform your strategy for
+                                   student achievement." id="ot18"/>
+                                </af:panelGroupLayout>
+                            </af:panelBox>
+                            <af:panelBox inlineStyle="" styleClass="content-subhead mdl-color-text--accent"
+                                         text="#{i18n['small.businesses']}" id="pb6" showDisclosure="false">
+                                <f:facet name="toolbar"/>
+                                <af:spacer id="s9"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl6">
+                                    <af:outputFormatted value="Better assess your strengths and opportunities."
+                                                        id="ot59"/>
+                                    <af:outputFormatted value="We're up to the challenge of getting more out of your spreadsheets."
+                                                        id="ot60"/>
+                                </af:panelGroupLayout>
+                            </af:panelBox>
+                            <af:panelBox inlineStyle="" styleClass="mdl-color-text--accent"
+                                         text="#{i18n['laboratories']}" id="pb7" showDisclosure="false">
+                                <f:facet name="toolbar"/>
+                                <af:spacer id="s10"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl22">
+                                    <af:outputText value="Humanity has always been able to count on our scientific and clinical laboratories to
+                                   move us forward" id="ot24"/>
+                                    <af:outputText value="Enable your laboratory to derive real intelligence from data collection and
+                                   collaboration." id="ot25"/>
+                                </af:panelGroupLayout>
+                            </af:panelBox>
+                            <af:panelBox inlineStyle="" styleClass="content-subhead mdl-color-text--accent"
+                                         text="#{i18n['non.profits']}" id="pb8" showDisclosure="false">
+                                <f:facet name="toolbar"/>
+                                <af:spacer id="s11"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl2">
+                                    <af:outputFormatted value="Make data-driven decisions about resource allocation to maximize social impact."
+                                                        id="ot27"/>
+                                    <af:outputFormatted value="Better serve underserved communities and communities in emergency situations."
+                                                        id="ot28"/>
+                                </af:panelGroupLayout>
+                            </af:panelBox>
+                        </af:panelDashboard>
+                        <af:separator id="s2"/>
+                        <af:panelBox clientComponent="true" styleClass="mdl-color--primary-contrast"
+                                     showDisclosure="false" id="pb12">
+                            <af:panelGridLayout id="pgl13">
+                                <af:gridRow marginTop="5px" height="auto" id="gr21">
+                                    <af:gridCell styleClass="AFStretchWidth" halign="center" marginStart="5px"
+                                                 marginEnd="5px" id="gc6">
+                                        <af:outputText clientComponent="true"
+                                                       styleClass="mdl-typography--text-center large-text mdl-color-text--accent"
+                                                       value="#{i18n['about.us']}" id="about"/>
+                                    </af:gridCell>
+                                </af:gridRow>
+                            </af:panelGridLayout>
+                        </af:panelBox>
+                        <af:panelGridLayout id="pgl7">
+                            <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr5">
+                                <af:gridCell inlineStyle="" marginStart="5px" width="33%" id="gc10">
+                                    <af:image shortDesc="coffee-shop-background"
+                                              source="/img/common/coffee-shop-background.jpg" id="i1"
+                                              />
+                                </af:gridCell>
+                                <af:gridCell styleClass="responsive-cell" inlineStyle="background-color: rgb(66,66,66); padding: 5px;" rowSpan="5"
+                                             marginStart="5px" width="67%" marginEnd="5px" id="gc11">
+                                             
+                                    <af:panelGroupLayout   id="pgl4">
+                                        <af:outputText styleClass="mdl-color-text--accent" value="#{i18n['about.us.p1']}" id="ot30"/>
+                                        <af:outputText styleClass="mdl-color-text--accent collapse-on-mobile" value="#{i18n['about.us.p2']}" id="ot31"/>
+                                        <af:outputText styleClass="mdl-color-text--accent collapse-on-mobile"
+                                                            value="#{i18n['about.us.p3']}"
+                                                            id="ot32"/>
+                                        <af:outputText styleClass="mdl-color-text--accent collapse-on-mobile"
+                                                            value="#{i18n['about.us.p4']}" id="ot33"/>
+                                    </af:panelGroupLayout>
+                                </af:gridCell>
+                            </af:gridRow>
+                        </af:panelGridLayout>
+                        <af:separator id="s3"/>
+                        <af:panelBox styleClass="mdl-color--primary-contrast" showDisclosure="false" id="pb13">
+                            <af:panelGridLayout id="pgl14">
+                                <af:gridRow marginTop="5px" height="auto" id="gr22">
+                                    <af:gridCell halign="center" marginStart="5px" styleClass="AFStretchWidth"
+                                                 marginEnd="5px" id="gc5">
+                                        <af:outputText clientComponent="true"
+                                                       styleClass="mdl-typography--text-center large-text mdl-color-text--accent"
+                                                       value="#{i18n['our.people']}" id="people"/>
+                                    </af:gridCell>
+                                </af:gridRow>
+                            </af:panelGridLayout>
+                        </af:panelBox>
+                        <af:panelGridLayout id="pgl19">
+                            <af:gridRow marginTop="5px" height="auto" id="gr20"></af:gridRow>
+                            <af:gridRow marginTop="5px" height="auto" id="gr1">
+                                <af:gridCell marginStart="5px" width="50%" id="gc1">
+                                    <af:image shortDesc="mensah-avatar" source="img/common/mensah-avatar.jpg"
+                                              inlineStyle="height: 140px;" alt="" id="i7"/>
+                                </af:gridCell>
+                                <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc2">
+                                    <af:image shortDesc="lafonda-avatar" source="img/common/lafonda-avatar.jpg"
+                                              inlineStyle="height: 140px;" alt="" id="i8"/>
+                                </af:gridCell>
+                            </af:gridRow>
+                            <af:gridRow marginTop="5px" height="auto" id="gr2">
+                                <af:gridCell marginStart="5px" width="50%" id="gc3">
+                                    <af:outputFormatted styleClass="mdl-card__title-text mdl-color-text--accent"
+                                                        value="Mensah Alkebu-Lan" id="ot35"/>
+                                </af:gridCell>
+                                <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc21">
+                                    <af:outputFormatted styleClass="mdl-card__title-text mdl-color-text--accent"
+                                                        value="LaFonda Roberson" id="ot41"/>
+                                </af:gridCell>
+                            </af:gridRow>
+                            <af:gridRow marginTop="5px" height="auto" id="gr10">
+                                <af:gridCell styleClass="responsive-text-small" marginStart="5px" width="50%" id="gc22">
+                                    <af:outputText inlineStyle="color: rgb(66,66,66);" value="Technical
+                                                                                                        Implementation
+                                                                                                        Consultant"
+                                                   id="ot36"/>
+                                </af:gridCell>
+                                <af:gridCell styleClass="responsive-text-small" marginStart="5px" width="50%" marginEnd="5px" id="gc23">
+                                    <af:outputText inlineStyle="color: rgb(66,66,66);" value="SAAS Sales
+                                                                                                        Manager"
+                                                   id="ot42"/>
+                                </af:gridCell>
+                            </af:gridRow>
+                            <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr11">
+                                <af:gridCell marginStart="5px" width="50%" id="gc25">
+                                    <af:button id="show-dialog-1" text="Short Bio" clientComponent="true"
+                                               styleClass="mdl-color--primary-contrast mdl-button--colored mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect modal-dialog-button">
+                                        <af:showPopupBehavior align="beforeStart" popupId="p1"/>
+                                    </af:button>
+                                    <af:icon styleClass="material-icons" id="i3">person</af:icon>
+                                </af:gridCell>
+                                <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc26">
+                                    <af:button id="show-dialog-2" text="Short Bio" clientComponent="true"
+                                               styleClass="mdl-color--primary-contrast mdl-button--colored mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect modal-dialog-button">
+                                        <af:showPopupBehavior align="beforeStart" popupId="p2"/>
+                                    </af:button>
+                                    <af:icon styleClass="material-icons" id="i2">person</af:icon>
+                                </af:gridCell>
+                            </af:gridRow>
+                        </af:panelGridLayout>
+                        <!-- modal view 1 -->
+                        <af:popup childCreation="deferred" autoCancel="disabled" id="p1">
+                            <af:panelWindow closeIconVisible="true" contentWidth="500"
+                                            styleClass="responsive-text-med mdl-dialog__title mdl-color-text--primary large-text is-center"
+                                            title="Meet Mensah" id="pw1">
+                                <af:panelGroupLayout id="pgl9" layout="vertical">
+                                    <af:outputFormatted value="At about the time funding for Doctoral students like myself was drying
+                                               up, Java 5 had already begun sweeping across the Software Development
+                                               world and opportunities were opening up for people who knew how to use it
+                                               to develop business solutions." id="ot38"/>
+                                    <af:outputFormatted value="At the time, I was inspired by Roy Fielding's dissertation, the Ubuntu
+                                               Linux community, and the social conditions of parts of Northeast and
+                                               Southeast Washington, DC." id="ot39"/>
+                                    <af:outputFormatted value="This motivated me to get involved with Universal Equations."
+                                                        id="ot40"/>
+                                </af:panelGroupLayout>
+                            </af:panelWindow>
+                        </af:popup>
+                        <!-- modal view 2 -->
+                        <af:popup childCreation="deferred" autoCancel="disabled" id="p2">
+                            <af:panelWindow closeIconVisible="true" contentWidth="500"
+                                            styleClass="responsive-text-med mdl-dialog__title mdl-color-text--primary large-text is-center"
+                                            title="Meet LaFonda" id="pw2">
+                                <af:panelGroupLayout id="pg20" layout="vertical">
+                                    <af:outputFormatted value="I am a U.S. Army Veteran, hold a Bachelors of Science in Business and
+                                               Management, and have been engaging clients for over 8 years with J.P.
+                                               Morgan Chase-- serving others on a daily basis." id="ot44"/>
+                                    <af:outputFormatted value="I joined Universal Equations because I like to solve problems and come up
+                                               with resolutions that help others." id="ot45"/>
+                                    <af:outputFormatted value="Universal Equations will do all the work for you in regards of finding
+                                               out what your needs are and then providing you with the best product."
+                                                        id="ot46"/>
+                                    <af:outputFormatted value="We look forward to serving you." id="ot47"/>
+                                </af:panelGroupLayout>
+                            </af:panelWindow>
+                        </af:popup>
+                        <af:separator id="s4"/>
+                        <af:panelBox styleClass="mdl-color--primary-contrast" showDisclosure="false" id="pb14">
+                            <af:panelGridLayout id="pgl15">
+                                <af:gridRow marginTop="5px" height="auto" id="gr23">
+                                    <af:gridCell styleClass="AFStretchWidth" halign="center" marginStart="5px"
+                                                 marginEnd="5px" id="gc7">
+                                        <af:outputText clientComponent="true"
+                                                       styleClass="mdl-typography--text-center large-text mdl-color-text--accent"
+                                                       value="#{i18n['technologies']}" id="technologies"/>
+                                    </af:gridCell>
+                                </af:gridRow>
+                            </af:panelGridLayout>
+                        </af:panelBox>
+                        <af:panelDashboard id="pd1" columns="2" rowHeight="300px">
+                        <af:matchMediaBehavior propertyName="rowHeight" matchedPropertyValue="375px" mediaQuery="screen and (max-width: 768px)"/>
+                            <af:panelBox text="#{i18n['mysql']}" id="pb1" type="stretch" showDisclosure="false">
+                                <f:facet name="toolbar"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl23">
+                                    <af:outputFormatted styleClass="mdl-color-text--accent"
+                                                        value="Are you using both MySQL and Oracle Database?" id="ot6"/>
+                                    <af:outputFormatted styleClass="mdl-color-text--accent" value="Did you know that MySQL Enterprise Edition lets you use the same tools,
+                                           including Oracle Enterprise Manager, Oracle Secure Backup and others to
+                                           manage both?" id="ot7"/>
+                                    <af:outputFormatted styleClass="mdl-color-text--accent" value="Additionally, MySQL Enterprise Edition enables you to achieve the highest
+                                           levels of MySQL Security, Performance &amp; Uptime." id="ot8"/>
+                                </af:panelGroupLayout>
+                                <af:button destination="#{i18n['datasheet.url.mysql']}"
+                                           styleClass="mdl-color--primary-contrast js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--primary"
+                                           id="l1" text="#{i18n['here']}">
+                                    <!--<af:clientListener type="click" method="goog_report_conversion('#{i18n['datasheet.url.mysql']}')"/>-->
+                                </af:button>
+                            </af:panelBox>
+                            <af:panelBox showDisclosure="false" text="#{i18n['adf']}" id="pb2" type="stretch">
+                                <f:facet name="toolbar"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl24">
+                                    <af:outputFormatted styleClass="mdl-color-text--accent" value="Oracle Application Development Framework (ADF) is a user interface framework
+                                           built atop the Enterprise Java platform." id="ot10"/>
+                                    <af:outputFormatted styleClass="mdl-color-text--accent"
+                                                        value="ADF offers unparalleled productivity to application developers."
+                                                        id="ot11"/>
+                                    <af:outputFormatted styleClass="mdl-color-text--accent" value="It provides integrated infrastructure for the layers of the application and
+                                           an easy way to develop for them." id="ot12"/>
+                                </af:panelGroupLayout>
+                                <af:button destination="#{i18n['datasheet.url.adf']}"
+                                           inlineStyle="text-decoration:none currentColor;"
+                                           styleClass="mdl-color--primary-contrast js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--primary"
+                                           id="l2" text="#{i18n['here']}">
+                                    <!--<af:clientListener type="click" method="goog_report_conversion('#{i18n['datasheet.url.adf']}')"/>-->
+                                </af:button>
+                            </af:panelBox>
+                            <af:panelBox showDisclosure="false" text="#{i18n['peopletools']}" id="pb3" type="stretch">
+                                <f:facet name="toolbar"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl25">
+                                    <af:outputText styleClass="mdl-color-text--accent" value="As the common platform and toolset for all PeopleSoft applications,
+                                           PeopleSoft PeopleTools provides simplicity (through self-service usability,
+                                           activity guides, and visualization), increased productivity (through work
+                                           centers, smart navigation, and mobile enablement), and lower cost of
+                                           ownership (through virtualization, application data sets, and Fusion
+                                           Applications interoperability)." id="ot14"/>
+                                </af:panelGroupLayout>
+                                <af:button destination="#{i18n['datasheet.url.peopletools']}"
+                                           inlineStyle="text-decoration:none currentColor;"
+                                           styleClass="mdl-color--primary-contrast mdl-color--primary-contrast js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--primary"
+                                           id="l3" text="#{i18n['here']}">
+                                    <!--<af:clientListener type="click" method="goog_report_conversion('#{i18n['datasheet.url.peopletools']}')"/>-->
+                                </af:button>
+                            </af:panelBox>
+                            <af:panelBox showDisclosure="false" text="#{i18n['oracle.linux']}" id="pb4" type="stretch">
+                                <f:facet name="toolbar"/>
+                                <af:panelGroupLayout inlineStyle="-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;" landmark="main" styleClass="mdl-color--primary-contrast" layout="vertical" id="pgl26">
+                                    <af:outputFormatted styleClass="mdl-color-text--accent" value="Oracle Linux brings you the latest Linux innovations and unique extra
+                                           features that help you save money, manage your Linux systems, and update them
+                                           with zero downtime." id="ot50"/>
+                                    <af:outputFormatted styleClass="mdl-color-text--accent" value="Plus: Oracle Linux Support is the highest-quality yet lowest-cost support in
+                                           the market." id="ot51"/>
+                                    <af:outputFormatted styleClass="mdl-color-text--accent"
+                                                        value="Oracle Linux: quite simply the best enterprise Linux available today."
+                                                        id="ot52"/>
+                                </af:panelGroupLayout>
+                                <af:button destination="#{i18n['datasheet.url.oracle.linux']}"
+                                           inlineStyle="text-decoration:none currentColor;"
+                                           styleClass="mdl-color--primary-contrast js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--primary"
+                                           text="#{i18n['here']}" id="b2">
+                                    <!--<af:clientListener type="click" method="goog_report_conversion('#{i18n['datasheet.url.oracle.linux']}')"/>-->
+                                </af:button>
+                            </af:panelBox>
+                        </af:panelDashboard>
+                        <af:separator id="s5"/>
+                        <af:panelGridLayout id="pgl17">
+                            <af:gridRow marginTop="5px" height="auto" id="gr16">
+                                <af:gridCell halign="stretch" styleClass="AFStretchWidth" marginStart="5px"
+                                             marginEnd="5px" id="gc30">
+                                    <af:outputFormatted styleClass="mdl-typography--text-center mdl-color-text--primary"
+                                                        value="#{i18n['much.more']}" id="ot54"/>
+                                </af:gridCell>
+                            </af:gridRow>
+                        </af:panelGridLayout>
+                        <af:separator id="s6"/>
+                        <!-- contact us -->
+                        <af:panelBox styleClass="mdl-color--primary-contrast" id="pb16">
+                            <af:panelGridLayout id="pgl3">
+                                <af:gridRow marginTop="5px" height="auto" id="gr3">
+                                    <af:gridCell halign="center" marginStart="5px" marginEnd="5px" id="gc4">
+                                        <af:outputText clientComponent="true"
+                                                       styleClass="mdl-typography--text-center large-text mdl-color-text--accent"
+                                                       value="#{i18n['contact-us']}" id="contact"/>
+                                    </af:gridCell>
+                                </af:gridRow>
+                            </af:panelGridLayout>
+                        </af:panelBox>
+                        <af:panelGridLayout id="pgl11">
+                            <af:gridRow marginTop="5px" height="auto" id="gr8">
+                                <af:gridCell marginStart="5px" width="40%" id="gc16">
+                                    <af:outputFormatted value="#{i18n['call.on.phone']}"
+                                                        styleClass="mdl-color-text--primary is-center" id="ot5"/>
+                                </af:gridCell>
+                                <af:gridCell marginStart="5px" width="20%" id="gc17"/>
+                                <af:gridCell marginStart="5px" width="40%" marginEnd="5px" id="gc18">
+                                    <af:link destination="tel:#{i18n['uequations.phone.number']}"
+                                             styleClass="mdl-color-text--accent" id="ot9"
+                                             inlineStyle="color: rgb(255, 110, 64) !important;"
+                                             text="#{i18n['uequations.phone.number']}"/>
+                                </af:gridCell>
+                            </af:gridRow>
+                            <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr9">
+                                <af:gridCell marginStart="5px" width="40%" id="gc19">
+                                    <af:outputFormatted value="#{i18n['send.us.email']}"
+                                                        styleClass="mdl-color-text--primary" id="of1"/>
+                                </af:gridCell>
+                                <af:gridCell marginStart="5px" width="20%" id="gc20"/>
+                                <af:gridCell marginStart="5px" width="40%" marginEnd="5px" id="gc24">
+                                    <af:link destination="#{i18n['uequations.email.address.url']}"
+                                             inlineStyle="color: rgb(255, 110, 64) !important;"
+                                             styleClass="mdl-color-text--accent"
+                                             text="#{i18n['uequations.email.address']}" id="l6"/>
+                                </af:gridCell>
+                            </af:gridRow>
+                        </af:panelGridLayout>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <f:facet name="start"></f:facet>
+                <f:facet name="end">
+                    <af:panelGridLayout id="pgl16">
+                        <af:gridRow marginTop="5px" height="auto" id="gr24">
+                            <af:gridCell halign="center" marginStart="5px" styleClass="AFStretchWidth" marginEnd="5px"
+                                         id="gc14">
+                                <af:outputFormatted styleClass="large-text mdl-color-text--accent"
+                                                    value="#{i18n['the.news']}" id="of2"/>
+                            </af:gridCell>
+                        </af:gridRow>
+                    </af:panelGridLayout>
+                    <!-- stay informed -->
+                    <af:panelGridLayout id="pgl10">
+                        <af:gridRow marginTop="5px" height="10px" marginBottom="5px" id="gr7">
+                            <af:gridCell rowSpan="1" marginStart="5px" width="67%" marginEnd="5px" id="gc15">
+                                <af:link styleClass="twitter-timeline mdl-color-text--accent" data-width="1200"
+                                         data-height="600" destination="https://twitter.com/uequations"
+                                         text="Tweets by uequations" id="l4"/>
+                            </af:gridCell>
+                        </af:gridRow>
+                    </af:panelGridLayout>
+                </f:facet>
+                <f:facet name="footer">
+                    <af:panelStretchLayout styleClass="mdl-color--primary-contrast" centerLandmark="navigation"
+                                           bottomLandmark="contentinfo" startWidth="340px" endWidth="170px" id="psl1">
+                        <f:facet name="start">
+                            <af:panelBox showDisclosure="false" text="#{i18n['follow.us']}" id="pb15">
+                                <f:facet name="toolbar"/>
+                                <af:link text="#{i18n['follow.us.on.twitter']}" id="l5"
+                                         destination="https://twitter.com/uequations" styleClass="twitter-follow-button"
+                                         data-show-count="false"/>
+                            </af:panelBox>
+                        </f:facet>
+                        <f:facet name="end">
+                            <af:panelBox showDisclosure="false" id="pb17">
+                                <af:link inlineStyle="vertical-align: text-bottom;" destination="/faces/privacy.jsf"
+                                         text="#{i18n['privacy']}"
+                                         styleClass="mdl-color-text--accent mdl-js-ripple-effect" id="l7"/>
+                            </af:panelBox>
+                        </f:facet>
+                        <f:facet name="top"/>
+                        <f:facet name="bottom">
+                            <af:outputFormatted styleClass="mdl-color-text--accent" id="ot4"
+                                                value="#{i18n['copyright']}"/>
+                        </f:facet>
+                        <f:facet name="center"></f:facet>
+                    </af:panelStretchLayout>
+                </f:facet>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>
